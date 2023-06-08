@@ -17,7 +17,8 @@ function onSubmit(e){
         console.log("Adding item: " + inputForm.value); 
         errorMessage.innerHTML = ''; // Clear the error message when the input is not empty
         const li = document.createElement('li');
-        li.classList.add('list-group-item'); // Add 'list-group-item' class to the li element
+        li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+ // Add 'list-group-item' class to the li element
 
         // Create a new button
         const doneButton = document.createElement('button');
