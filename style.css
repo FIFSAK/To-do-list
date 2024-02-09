@@ -1,0 +1,84 @@
+body {
+    font-family: Calibri;
+    display: flex;
+    justify-content: center
+}
+
+#todo-form {
+    text-align: center;
+}
+
+#todo-input {
+    width: 400px;
+    height: 30px;
+}
+
+.add {
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #1966ee;
+    transition: 0.6s linear;
+}
+
+.add:hover {
+    background-color: #00169a;
+}
+
+.btn-success {
+    width: 90px; /* Убедитесь, что ширина одинакова для обоих классов */
+    height: 35px; /* Убедитесь, что высота одинакова для обоих классов */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #28a745; /* Зеленый цвет */
+}
+.btn-secondary{
+    width: 90px; /* Убедитесь, что ширина одинакова для обоих классов */
+    height: 35px; /* Убедитесь, что высота одинакова для обоих классов */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: gray;
+}
+
+
+.btn-success:hover {
+    background-color: #218838; /* Немного темнее при наведении */
+}
+
+.btn-danger {
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #dc3545; /* Красный цвет */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Немного темнее при наведении */
+}
+
+.container li {
+    overflow: hidden; /* Скрывать содержимое, выходящее за пределы */
+    /* или */
+    overflow: auto; /* Добавлять прокрутку для содержимого, выходящего за пределы */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 10px; /* Добавьте немного отступа между задачами */
+    padding: 10px;
+    background-color: #f9f9f9; /* Легкий фон для задач */
+    border-radius: 5px; /* Скругленные углы для элементов списка */
+}
+
+.container li .task-content {
+    flex-grow: 1;
+    margin: 0 10px; /* Отступы вокруг текста задачи */
+}
+
+.btn-secondary, .btn-danger {
+    width: 90px; /* Фиксированная ширина для кнопок */
+}
